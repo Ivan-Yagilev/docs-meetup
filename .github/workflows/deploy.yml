@@ -16,7 +16,6 @@ jobs:
       - run: |
           pip install mkdocs mkdocs-awesome-pages-plugin mkdocs-material mkdocs-material-extensions
           mkdocs build --site-dir site
-          ls -la ./site
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.2.1
         with:
@@ -26,4 +25,6 @@ jobs:
           script: |
             mkdir -p /opt/docs
             rm -rf /opt/docs/*
-            cp -r ./site/* /opt/docs/
+      - name: Copy files to server
+        run: |
+          scp -r ./site/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/opt/docs/
