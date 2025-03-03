@@ -16,6 +16,8 @@ jobs:
       - run: |
           pip install mkdocs mkdocs-awesome-pages-plugin
           mkdocs build --site-dir site
+          ls -la
+          pip list
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.2.1
         with:
