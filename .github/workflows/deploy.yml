@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-          pip install mkdocs mkdocs-awesome-pages-plugin
+          pip install mkdocs mkdocs-awesome-pages-plugin mkdocs-material mkdocs-material-extensions
           mkdocs build --site-dir site
           ls -la
           pip list
@@ -27,4 +27,5 @@ jobs:
           script: |
             mkdir -p /opt/docs
             rm -rf /opt/docs/*
-            cp -r site/* /opt/docs/
+            cp -r /home/runner/work/docs-meetup/docs-meetup/site/* /opt/docs/
+            cp -r ./site/* /opt/docs/
