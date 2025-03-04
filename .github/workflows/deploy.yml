@@ -21,7 +21,8 @@ jobs:
           mkdir -p ~/.ssh
           echo "$SERVER_SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "mkdir -p /opt/docs; rm -rf /opt/docs/*"
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} \
+            "mkdir -p /opt/docs; rm -rf /opt/docs/*"
           scp -r ./site/* ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/opt/docs/
         env:
           SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
