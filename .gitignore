@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+meetup.md
+qr-code.png
+
 # C extensions
 *.so
 
