@@ -1,5 +1,2 @@
-[Сменить тему]{ .md-button .md-button--primary }
-
-Стилизованный текст: 
-- {.text-red} Красный текст
-- {.text-underline} Подчёркнутый
+<span style="color: red;">Красный текст</span>
+<span style="text-decoration: underline;">Подчёркнутый текст</span>
