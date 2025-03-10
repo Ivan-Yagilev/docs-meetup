@@ -10,6 +10,9 @@ theme:
     - scheme: slate
       primary: blue
 
+plugins:
+  - mermaid2
+
 markdown_extensions:
   - admonition
   - pymdownx.details

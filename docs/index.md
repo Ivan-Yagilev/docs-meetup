@@ -4,4 +4,5 @@
 
 ---
 
-* [Функции](./functions/tasks/create_task.md)
+* [Функции](./project/Mermaid.md)
+* [Демонстрация] (./demo/Admonitions.md)
