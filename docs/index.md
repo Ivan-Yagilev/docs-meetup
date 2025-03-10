@@ -1,4 +1,4 @@
-# Welcome
+# Добро пожаловать
 
 Пример документации, созданной с помощью MkDocs.
 
@@ -8,4 +8,5 @@
 
 ---
 
-* [Функции](./demo/Admonitions.md)
+* [Функции](./functions/Admonitions.md)
+* [Документация mkdocs](./project/index.md)

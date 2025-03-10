@@ -34,3 +34,38 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+
+nav:
+  - Главная: index.md
+  - Функции:
+    - Замечания: functions/Admonitions.md
+    - Код: functions/Code.md
+    - Форматы: functions/Formats.md
+    - Таблицы: functions/Tables.md
+    - Темы: functions/Themes.md
+    - Директория:
+      - Списки: functions/directory/Lists.md
+      - Вкладки: functions/directory/Tabs.md
+  - Проект:
+    - Главная: project/index.md
+    - О проекте: project/1about.md
+    - Контакты: project/2contact.md
+    - Начало работы:
+      - Установка: project/installation.md
+    - Конфигурация:
+      - Основы: project/4configuration.md
+      - Кастомизация: project/14customization.md
+    - Разработка:
+      - Вклад в проект: project/7contributing.md
+      - История изменений: project/8changelog.md
+    - Документация:
+      - API документация: project/10api.md
+      - Примеры: project/11examples.md
+      - Продвинутые темы: project/12advanced.md
+    - Публикация:
+      - Публикация: project/13deployment.md
+    - Поддержка:
+      - Часто задаваемые вопросы: project/5faq.md
+      - Решение проблем: project/6troubleshooting.md
+    - Лицензия: project/9license.md
