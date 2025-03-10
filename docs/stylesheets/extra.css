@@ -1,0 +1,28 @@
+.custom-red {
+    color: #e63946; /* Ярко-красный цвет */
+    font-size: 1.3em; /* Увеличенный размер шрифта */
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(230, 57, 70, 0.6); /* Тень для эффекта */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Плавный переход цвета и тени */
+}
+
+.custom-red:hover {
+    color: #d62839; /* Темнее при наведении */
+    text-shadow: 3px 3px 8px rgba(230, 57, 70, 0.8); /* Увеличенная тень при наведении */
+}
+
+.custom-blue {
+    text-decoration: underline;
+    font-style: italic;
+    color: #1d3557; /* Темно-синий цвет */
+    border: 2px solid #1d3557; /* Граница того же цвета */
+    padding: 10px;
+    border-radius: 8px; /* Закругленные углы */
+    background-color: rgba(29, 53, 87, 0.1); /* Легкий фон для выделения */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход фона и трансформации */
+}
+
+.custom-blue:hover {
+    background-color: rgba(29, 53, 87, 0.2); /* Более яркий фон при наведении */
+    transform: scale(1.05); /* Увеличение размера при наведении */
+}
