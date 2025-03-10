@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-material-extensions mkdocs-markdownextradata-plugin pip install mkdocs-mermaid2-plugin
+          pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin mkdocs-material-extensions mkdocs-markdownextradata-plugin mkdocs-mermaid2-plugin
           mkdocs build --site-dir site
       - name: Deploy to server
         run: |

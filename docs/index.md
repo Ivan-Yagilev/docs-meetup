@@ -2,7 +2,9 @@
 
 Это пример документации, созданной с помощью MkDocs.
 
+![GitHub](../images/qr-code.png)
+
 ---
 
-* [Функции](./project/Mermaid.md)
-* [Демонстрация] (./demo/Admonitions.md)
+* [Функции](./demo/Admonitions.md)
+* [Демонстрация] (./project/Code.md)
